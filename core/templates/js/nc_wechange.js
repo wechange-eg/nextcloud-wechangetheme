@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.info-nav-button').click(function(event){
         event.stopPropagation();
         event.preventDefault();
-        OCP.Loader.loadScript('firstrunwizard', 'firstrunwizard.js').then(function () {
+        OCP.Loader.loadScript('firstrunwizard', 'firstrunwizard-main.js').then(function () {
             OCA.FirstRunWizard.open(false);
             OC.hideMenus(function () {
                 return false;
